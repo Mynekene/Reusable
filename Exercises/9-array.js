@@ -1,16 +1,17 @@
 'use strict';
 
-/* Collections: Array, Hash (Object)
+const phonebook = [
+  { name: 'Marcus Aurelius', phone: '+380445554433' },
+  { name: 'Олександр', phone: '+380501234567' },
+  { name: 'Іван', phone: '+380671112233' },
+];
 
-Implement phone book using array of records.
-- Define Array of objects with two fields: `name` and `phone`.
-Object example: `{ name: 'Marcus Aurelius', phone: '+380445554433' }`.
-- Implement function `findPhoneByName` with signature
-`findPhoneByName(name: string): string`. Returning phone from that object
-where field `name` equals argument `name`. Use `for` loop for this search. */
-
-const phonebook = null;
-
-const findPhoneByName = null;
+const findPhoneByName = (name) => {
+  for (let i = 0; i < phonebook.length; i++) {
+    if (phonebook[i].name === name) {
+      return phonebook[i].phone;
+    }
+  }
+};
 
 module.exports = { phonebook, findPhoneByName };
