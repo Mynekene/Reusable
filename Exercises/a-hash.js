@@ -1,14 +1,13 @@
 'use strict';
 
-/* 10. Implement phone book using hash (also known as `object`).
-- Define hash with `key` contains `name` (from previous example) and `value`
-contains `phone`.
-- Implement function `findPhoneByName` with signature
-`findPhoneByName(name: string): string`. Returning phone from hash/object.
-Use `hash[key]` to find needed phone. */
+const phonebook = {
+  'Marcus Aurelius': '+380445554433',
+  'Олександр': '+380501234567',
+  'Іван': '+380671112233',
+};
 
-const phonebook = null;
-
-const findPhoneByName = null;
+const findPhoneByName = (name) => {
+  return phonebook[name];
+};
 
 module.exports = { phonebook, findPhoneByName };
