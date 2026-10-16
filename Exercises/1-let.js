@@ -1,7 +1,6 @@
 'use strict';
 
-// Define variable to store your name as a string
-
-let name = undefined;
+// моє ім'я
+let name = 'Олександр';
 
 module.exports = { name };
