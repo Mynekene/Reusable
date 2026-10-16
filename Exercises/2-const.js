@@ -1,7 +1,6 @@
 'use strict';
 
-// Define constant to store your birth year as a number
-
-const year = undefined;
+// рік народження
+const year = 2009;
 
 module.exports = { year };
